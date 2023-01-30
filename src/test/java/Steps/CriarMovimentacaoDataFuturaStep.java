@@ -6,10 +6,13 @@ import Runner.RunSeuBarriga;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CriarMovimentacaoDataFuturaStep extends RunSeuBarriga {
-    CriarMovimentacaoPage criarMovimentacao = new CriarMovimentacaoPage();
-    CriarMovimentacaoDataFuturaPage criarMovimentacaoDataFutura = new CriarMovimentacaoDataFuturaPage();
+    WebDriver driver = new ChromeDriver();
+    CriarMovimentacaoPage criarMovimentacao = new CriarMovimentacaoPage(driver);
+    CriarMovimentacaoDataFuturaPage criarMovimentacaoDataFutura = new CriarMovimentacaoDataFuturaPage(driver);
     @Quando("preencho o campo data movimentaçao com uma data maior que data atual")
     public void preenchoCampos() {
         criarMovimentacao.preencherCampoTipoMovimentacao();

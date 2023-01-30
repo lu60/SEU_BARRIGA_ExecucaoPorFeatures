@@ -3,9 +3,12 @@ package Steps;
 import Pages.AcessoContaPage;
 import Pages.AdicionarContaPage;
 import cucumber.api.java.pt.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AdicionarContaStep {
-    AdicionarContaPage adiconaConta = new AdicionarContaPage();
+    WebDriver driver = new ChromeDriver();
+    AdicionarContaPage adiconaConta = new AdicionarContaPage(driver);
 
     @Dado("clico na opçao adicionar do menu contas")
     public void AcessoAdicionarMenuContas() {

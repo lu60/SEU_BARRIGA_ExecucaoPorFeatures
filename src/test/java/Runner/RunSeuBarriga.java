@@ -13,11 +13,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
         plugin = {"json:target/reports/seuBarriga.json", "html:target/reports/"},
         features = {"classpath:/features"},
         glue = {"Steps"},
-        tags = "@cenarioCompleto"
+        tags = "@acessarConta"
 )
 
-public class RunSeuBarriga extends RunBase{
+public class RunSeuBarriga {
 
+    public static WebDriver driver;
+
+    @BeforeClass
+    public static void start(){
+        driver = new ChromeDriver();
+    }
     @AfterClass
     public static void stop() {
         driver.quit();

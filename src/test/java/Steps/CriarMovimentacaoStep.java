@@ -5,9 +5,12 @@ import Runner.RunSeuBarriga;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CriarMovimentacaoStep extends RunSeuBarriga {
-    CriarMovimentacaoPage criarMovimentacao = new CriarMovimentacaoPage();
+    WebDriver driver = new ChromeDriver();
+    CriarMovimentacaoPage criarMovimentacao = new CriarMovimentacaoPage(driver);
 
     @Dado("que clico no menu criar movimentacao")
     public void clicoMenuCriarMovimentacao() {

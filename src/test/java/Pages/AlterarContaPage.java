@@ -2,14 +2,17 @@ package Pages;
 
 import Runner.RunSeuBarriga;
 import Suporte.Utils;
-import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class AlterarContaPage extends RunSeuBarriga {
+    WebDriver driver;
+
+    public AlterarContaPage(WebDriver driver) {
+        this.driver = driver;
+    }
+
     private By contas_menu = By.xpath("//a[contains(text(),'Contas')]");
     private By listar_contas = By.xpath("//a[contains(text(),'Listar')]");
     private By nome_lista = By.cssSelector("#tabelaContas > tbody > tr:nth-child(1) > td:nth-child(1)");
@@ -20,27 +23,27 @@ public class AlterarContaPage extends RunSeuBarriga {
     private By novoNome_lista = By.cssSelector("#tr:nth-child(1) > td:nth-child(1)");
 
     public void acessarLista(){
-        WebElement contas = getDriver().findElement(contas_menu);
+        WebElement contas = driver.findElement(contas_menu);
         contas.click();
 
-        WebElement adicionar = getDriver().findElement(listar_contas);
+        WebElement adicionar = driver.findElement(listar_contas);
         adicionar.click();
     }
     public void selecionarNomeAlterar(String nomeAlterar) {
-        String nomeLista = getDriver().findElement(nome_lista).getText();
+        String nomeLista = driver.findElement(nome_lista).getText();
             //if (nomeLista == escolherNomeLista) {
-                getDriver().findElement(iconeAlterar).click();
-                getDriver().findElement(nomeContaAlterada_txt).clear();
-                getDriver().findElement(nomeContaAlterada_txt).sendKeys(nomeAlterar);
+                driver.findElement(iconeAlterar).click();
+                driver.findElement(nomeContaAlterada_txt).clear();
+                driver.findElement(nomeContaAlterada_txt).sendKeys(nomeAlterar);
           //  }else{
           //      System.out.println("Não encontrado nome na lista.");
           //  }
     }
     public void clicarBotaoSalvar(){
-        getDriver().findElement(botaoSalvar).click();
+        driver.findElement(botaoSalvar).click();
     }
     public void visualizoListaNomeAlterado() {
-        String nomeLista = getDriver().findElement(nome_lista).getText();
+        String nomeLista = driver.findElement(nome_lista).getText();
         Utils.waitElementBePresent(nome_lista,2000);
         System.out.println(nomeLista);
     }

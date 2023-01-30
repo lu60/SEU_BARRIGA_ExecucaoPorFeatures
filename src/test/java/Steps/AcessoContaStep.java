@@ -13,7 +13,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AcessoContaStep extends RunSeuBarriga {
 
-    AcessoContaPage acessoContaPage = new AcessoContaPage();
+    WebDriver driver = new ChromeDriver();
+    AcessoContaPage acessoContaPage = new AcessoContaPage(driver);
 
     @Dado("^que estou no site do seu barriga$")
     public void AcessoLogin() {

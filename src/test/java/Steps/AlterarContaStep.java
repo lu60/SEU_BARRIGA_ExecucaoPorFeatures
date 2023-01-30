@@ -3,10 +3,13 @@ package Steps;
 import Pages.AlterarContaPage;
 import Runner.RunSeuBarriga;
 import cucumber.api.java.pt.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AlterarContaStep extends RunSeuBarriga {
+    WebDriver driver = new ChromeDriver();
 
-    AlterarContaPage alterarContaPage = new AlterarContaPage();
+    AlterarContaPage alterarContaPage = new AlterarContaPage(driver);
 
     @Dado("que estou na lista")
     public void estouNaLista() {

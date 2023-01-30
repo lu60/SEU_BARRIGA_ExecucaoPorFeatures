@@ -5,10 +5,13 @@ import Runner.RunSeuBarriga;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class VerificarCamposObrigatoriosStep extends RunSeuBarriga {
+    WebDriver driver = new ChromeDriver();
 
-    VerificarCamposObrigatoriosPage verificaCampos = new VerificarCamposObrigatoriosPage();
+    VerificarCamposObrigatoriosPage verificaCampos = new VerificarCamposObrigatoriosPage(driver);
     @Dado("que estou na tela de criar movimentacao")
     public void acessoTelaCriarMovimentacao() {
         verificaCampos.acessarCriarMovimentacao();

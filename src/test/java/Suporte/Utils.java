@@ -8,7 +8,7 @@ import java.time.Duration;
 
 public class Utils extends RunSeuBarriga {
     public static void waitElementBePresent(By element, Integer tempo){
-        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(tempo));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(tempo));
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 }
