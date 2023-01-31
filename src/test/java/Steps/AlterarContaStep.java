@@ -1,24 +1,23 @@
 package Steps;
 
+import Pages.AcessoContaPage;
 import Pages.AlterarContaPage;
 import Runner.RunSeuBarriga;
 import cucumber.api.java.pt.*;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AlterarContaStep extends RunSeuBarriga {
-    WebDriver driver = new ChromeDriver();
-
-    AlterarContaPage alterarContaPage = new AlterarContaPage(driver);
+    AcessoContaPage acessoContaPage = new AcessoContaPage();
+    AlterarContaPage alterarContaPage = new AlterarContaPage();
 
     @Dado("que estou na lista")
     public void estouNaLista() {
+        acessoContaPage.AcessarConta("lu.pocebon@gmail.com", "P@alito176");
         alterarContaPage.acessarLista();
     }
 
     @Quando("seleciono um nome da lista que desejo alterar")
     public void selecionoNomeAlterar() {
-        alterarContaPage.selecionarNomeAlterar("Tuca123");
+        alterarContaPage.selecionarNomeAlterar("Tuca1234");
         alterarContaPage.clicarBotaoSalvar();
     }
 

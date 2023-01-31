@@ -7,11 +7,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AdicionarContaStep {
-    WebDriver driver = new ChromeDriver();
-    AdicionarContaPage adiconaConta = new AdicionarContaPage(driver);
+    AcessoContaPage acessoContaPage = new AcessoContaPage();
+    AdicionarContaPage adiconaConta = new AdicionarContaPage();
 
     @Dado("clico na opçao adicionar do menu contas")
     public void AcessoAdicionarMenuContas() {
+        acessoContaPage.AcessarConta("lu.pocebon@gmail.com", "P@alito176");
         adiconaConta.AcessarMenuAdicionarContas();
     }
 

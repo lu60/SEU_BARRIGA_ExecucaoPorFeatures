@@ -3,59 +3,47 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2023-01-30T12:53:34.593Z",
-        "line": 6,
-        "name": "Acessar site inserindo Login de um usuário existente",
+        "start_timestamp": "2023-01-31T11:51:47.862Z",
+        "line": 59,
+        "name": "Remover uma conta com movimentação",
         "description": "",
-        "id": "acessar--adicionar-e-alterar-conta-de-um-usuário-no-site-do-seubarriga;acessar-site-inserindo-login-de-um-usuário-existente",
+        "id": "acessar--adicionar-e-alterar-conta-de-um-usuário-no-site-do-seubarriga;remover-uma-conta-com-movimentação",
         "type": "scenario",
-        "keyword": "Cenário",
+        "keyword": "Cenario",
         "steps": [
           {
             "result": {
-              "duration": 3877630200,
+              "duration": 10294981600,
               "status": "passed"
             },
-            "line": 7,
-            "name": "que estou no site do seu barriga",
+            "line": 60,
+            "name": "que estou na lista de contas",
             "match": {
-              "location": "AcessoContaStep.AcessoLogin()"
+              "location": "RemoverContaComMovimentacaoStep.acessoListaContas()"
             },
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 193133700,
+              "duration": 574074700,
               "status": "passed"
             },
-            "line": 8,
-            "name": "preencho meu e-mail e senha",
+            "line": 61,
+            "name": "seleciono o ícone para excluir um nome da lista que possui movimentação",
             "match": {
-              "location": "AcessoContaStep.PreenchoEmailSenha()"
+              "location": "RemoverContaComMovimentacaoStep.selecionoIconeExcluirConta()"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 672106400,
+              "duration": 31097500,
               "status": "passed"
             },
-            "line": 9,
-            "name": "clico no botao para entrar na conta",
+            "line": 62,
+            "name": "visualizo mensagem: Conta em uso na movimentações",
             "match": {
-              "location": "AcessoContaStep.ClicoBotaoEntrar()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 35175600,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "visualizo a conta com o nome do usuário logado",
-            "match": {
-              "location": "AcessoContaStep.VisualizoConta()"
+              "location": "RemoverContaComMovimentacaoStep.visualizoMensagemContaComMovimentacao()"
             },
             "keyword": "Então "
           }
@@ -65,7 +53,7 @@
             "name": "@cenarioCompleto"
           },
           {
-            "name": "@acessarConta"
+            "name": "@removerContaComMovimentacao"
           }
         ]
       }

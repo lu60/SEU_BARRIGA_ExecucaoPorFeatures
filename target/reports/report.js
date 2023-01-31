@@ -10,54 +10,44 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "Acessar site inserindo Login de um usuário existente",
+  "name": "Remover uma conta com movimentação",
   "description": "",
-  "keyword": "Cenário",
+  "keyword": "Cenario",
   "tags": [
     {
       "name": "@cenarioCompleto"
     },
     {
-      "name": "@acessarConta"
+      "name": "@removerContaComMovimentacao"
     }
   ]
 });
 formatter.step({
-  "name": "que estou no site do seu barriga",
+  "name": "que estou na lista de contas",
   "keyword": "Dado "
 });
 formatter.match({
-  "location": "AcessoContaStep.AcessoLogin()"
+  "location": "RemoverContaComMovimentacaoStep.acessoListaContas()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "preencho meu e-mail e senha",
+  "name": "seleciono o ícone para excluir um nome da lista que possui movimentação",
   "keyword": "Quando "
 });
 formatter.match({
-  "location": "AcessoContaStep.PreenchoEmailSenha()"
+  "location": "RemoverContaComMovimentacaoStep.selecionoIconeExcluirConta()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "clico no botao para entrar na conta",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "AcessoContaStep.ClicoBotaoEntrar()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "visualizo a conta com o nome do usuário logado",
+  "name": "visualizo mensagem: Conta em uso na movimentações",
   "keyword": "Então "
 });
 formatter.match({
-  "location": "AcessoContaStep.VisualizoConta()"
+  "location": "RemoverContaComMovimentacaoStep.visualizoMensagemContaComMovimentacao()"
 });
 formatter.result({
   "status": "passed"

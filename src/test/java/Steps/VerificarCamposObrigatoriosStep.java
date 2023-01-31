@@ -1,19 +1,18 @@
 package Steps;
 
+import Pages.AcessoContaPage;
 import Pages.VerificarCamposObrigatoriosPage;
 import Runner.RunSeuBarriga;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class VerificarCamposObrigatoriosStep extends RunSeuBarriga {
-    WebDriver driver = new ChromeDriver();
-
-    VerificarCamposObrigatoriosPage verificaCampos = new VerificarCamposObrigatoriosPage(driver);
+    AcessoContaPage acessoContaPage = new AcessoContaPage();
+    VerificarCamposObrigatoriosPage verificaCampos = new VerificarCamposObrigatoriosPage();
     @Dado("que estou na tela de criar movimentacao")
     public void acessoTelaCriarMovimentacao() {
+        acessoContaPage.AcessarConta("lu.pocebon@gmail.com", "P@alito176");
         verificaCampos.acessarCriarMovimentacao();
     }
 
