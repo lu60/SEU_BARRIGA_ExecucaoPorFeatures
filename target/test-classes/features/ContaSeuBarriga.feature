@@ -49,15 +49,26 @@ Funcionalidade: Acessar, adicionar e alterar conta de um usuário no site do Seu
     E clico botao salvar
     Entao visualizo mensagem: Data da Movimentação deve ser menor ou igual à data atual
 
-    @removerMovimentacao
-    Cenario: Remover uma movimentação da conta
-      Dado que estou na tela resumo mensal
-      Quando clico no icone de ações de uma movimentação
-      Entao visualizo mensagem: Movimentação removida com sucesso!
+  @removerMovimentacao
+  Cenario: Remover uma movimentação da conta
+    Dado que estou na tela resumo mensal
+    Quando clico no icone de ações de uma movimentação
+    Entao visualizo mensagem: Movimentação removida com sucesso!
 
-    @removerContaComMovimentacao
-    Cenario: Remover uma conta com movimentação
-      Dado que estou na lista de contas
-      Quando seleciono o ícone para excluir um nome da lista que possui movimentação
-      Então visualizo mensagem: Conta em uso na movimentações
+  @removerContaComMovimentacao
+  Cenario: Remover uma conta com movimentação
+    Dado que estou na lista de contas
+    Quando seleciono o ícone para excluir um nome da lista que possui movimentação
+    Então visualizo mensagem: Conta em uso na movimentações
 
+  @obterSaldoConta
+  Cenario: Visualizar saldo de uma conta com movimentação
+    Dado que acesso o menu home
+    Quando visualizo lista de contas e seus respectivos saldos
+    Entao seleciono e apresento uma das conta e seu respectivo saldo
+
+#  @verificarResumoMensal
+#  Cenario: Verificar tela resumo mensal
+#    Dado que estou no site seu barriga
+#    Quando acesso o menu resumo mensal
+#    Entao visualizo a aba com descrição: "Seu Barriga - Extrato"

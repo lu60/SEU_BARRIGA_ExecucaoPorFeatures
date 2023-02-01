@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         plugin = {"json:target/reports/seuBarriga.json", "html:target/reports/"},
         features = {"classpath:/features"},
         glue = {"Steps"},
-        tags = {"@removerContaComMovimentacao"}
+        tags = {"@cenarioCompleto"}
 )
 
 public class RunSeuBarriga extends RunBase{
