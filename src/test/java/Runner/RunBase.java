@@ -31,4 +31,5 @@ public class RunBase {
         }
         return driver;
     }
+    public static String NomeContaAdicionada = "Zebra " + System.nanoTime();
 }

@@ -3,7 +3,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2023-02-01T19:17:26.006Z",
+        "start_timestamp": "2023-02-03T15:28:55.121Z",
         "line": 6,
         "name": "Acessar site inserindo Login de um usuário existente",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8211405300,
+              "duration": 816100,
               "status": "passed"
             },
             "line": 7,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 21600,
+              "duration": 24200,
               "status": "passed"
             },
             "line": 8,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 6800,
+              "duration": 6500,
               "status": "passed"
             },
             "line": 9,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 31147900,
+              "duration": 27250800,
               "status": "passed"
             },
             "line": 10,
@@ -65,12 +65,12 @@
             "name": "@cenarioCompleto"
           },
           {
-            "name": "@acessarConta"
+            "name": "@1-acessarConta"
           }
         ]
       },
       {
-        "start_timestamp": "2023-02-01T19:17:34.253Z",
+        "start_timestamp": "2023-02-03T15:28:55.151Z",
         "line": 13,
         "name": "Alterar nome conta do usuario logado",
         "description": "",
@@ -80,7 +80,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1280035600,
+              "duration": 381656300,
               "status": "passed"
             },
             "line": 14,
@@ -92,7 +92,7 @@
           },
           {
             "result": {
-              "duration": 709228500,
+              "duration": 630372300,
               "status": "passed"
             },
             "line": 15,
@@ -104,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 23379300,
+              "duration": 26073100,
               "status": "passed"
             },
             "line": 16,
@@ -120,12 +120,12 @@
             "name": "@cenarioCompleto"
           },
           {
-            "name": "@alterarConta"
+            "name": "@2-alterarConta"
           }
         ]
       },
       {
-        "start_timestamp": "2023-02-01T19:17:36.266Z",
+        "start_timestamp": "2023-02-03T15:28:56.190Z",
         "line": 19,
         "name": "Alterar nome conta inserindo um nome já existente",
         "description": "",
@@ -135,7 +135,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1267175800,
+              "duration": 319550600,
               "status": "passed"
             },
             "line": 20,
@@ -147,7 +147,7 @@
           },
           {
             "result": {
-              "duration": 396177600,
+              "duration": 343388700,
               "status": "passed"
             },
             "line": 21,
@@ -159,7 +159,7 @@
           },
           {
             "result": {
-              "duration": 311396600,
+              "duration": 240832800,
               "status": "passed"
             },
             "line": 22,
@@ -171,7 +171,7 @@
           },
           {
             "result": {
-              "duration": 26647800,
+              "duration": 32151900,
               "status": "passed"
             },
             "line": 23,
@@ -187,12 +187,12 @@
             "name": "@cenarioCompleto"
           },
           {
-            "name": "@alterarContaMesmoNome"
+            "name": "@3-alterarContaMesmoNome"
           }
         ]
       },
       {
-        "start_timestamp": "2023-02-01T19:17:38.269Z",
+        "start_timestamp": "2023-02-03T15:28:57.127Z",
         "line": 26,
         "name": "Adicionar nova conta para o usuario logado",
         "description": "",
@@ -202,7 +202,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1384650500,
+              "duration": 349600400,
               "status": "passed"
             },
             "line": 27,
@@ -214,7 +214,7 @@
           },
           {
             "result": {
-              "duration": 53207800,
+              "duration": 62367800,
               "status": "passed"
             },
             "line": 28,
@@ -226,7 +226,7 @@
           },
           {
             "result": {
-              "duration": 285279200,
+              "duration": 300627300,
               "status": "passed"
             },
             "line": 29,
@@ -238,7 +238,7 @@
           },
           {
             "result": {
-              "duration": 27165400,
+              "duration": 27008800,
               "status": "passed"
             },
             "line": 30,
@@ -254,12 +254,12 @@
             "name": "@cenarioCompleto"
           },
           {
-            "name": "@adicionarConta"
+            "name": "@4-adicionarConta"
           }
         ]
       },
       {
-        "start_timestamp": "2023-02-01T19:17:40.020Z",
+        "start_timestamp": "2023-02-03T15:28:57.867Z",
         "line": 33,
         "name": "Inserir uma movimentação na conta",
         "description": "",
@@ -269,7 +269,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1307204900,
+              "duration": 236971700,
               "status": "passed"
             },
             "line": 34,
@@ -281,7 +281,7 @@
           },
           {
             "result": {
-              "duration": 510110000,
+              "duration": 456611400,
               "status": "passed"
             },
             "line": 35,
@@ -293,7 +293,7 @@
           },
           {
             "result": {
-              "duration": 311936800,
+              "duration": 340006200,
               "status": "passed"
             },
             "line": 36,
@@ -305,7 +305,7 @@
           },
           {
             "result": {
-              "duration": 27131900,
+              "duration": 29020300,
               "status": "passed"
             },
             "line": 37,
@@ -321,12 +321,12 @@
             "name": "@cenarioCompleto"
           },
           {
-            "name": "@criarMovimentacao"
+            "name": "@5-criarMovimentacao"
           }
         ]
       },
       {
-        "start_timestamp": "2023-02-01T19:17:42.178Z",
+        "start_timestamp": "2023-02-03T15:28:58.931Z",
         "line": 40,
         "name": "Validar mensagens dos campos obrigatórios ao criar uma movimentação",
         "description": "",
@@ -336,7 +336,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1447707600,
+              "duration": 234415400,
               "status": "passed"
             },
             "line": 41,
@@ -348,7 +348,7 @@
           },
           {
             "result": {
-              "duration": 269415300,
+              "duration": 351136000,
               "status": "passed"
             },
             "line": 42,
@@ -360,7 +360,7 @@
           },
           {
             "result": {
-              "duration": 153318200,
+              "duration": 129156300,
               "status": "passed"
             },
             "line": 43,
@@ -376,12 +376,12 @@
             "name": "@cenarioCompleto"
           },
           {
-            "name": "@camposObrigatorios"
+            "name": "@6-camposObrigatorios"
           }
         ]
       },
       {
-        "start_timestamp": "2023-02-01T19:17:44.048Z",
+        "start_timestamp": "2023-02-03T15:28:59.645Z",
         "line": 46,
         "name": "Inserir uma movimentação na conta com data futura",
         "description": "",
@@ -391,7 +391,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1268916400,
+              "duration": 273177600,
               "status": "passed"
             },
             "line": 47,
@@ -403,7 +403,7 @@
           },
           {
             "result": {
-              "duration": 759403600,
+              "duration": 676840600,
               "status": "passed"
             },
             "line": 48,
@@ -415,7 +415,7 @@
           },
           {
             "result": {
-              "duration": 257467100,
+              "duration": 287143500,
               "status": "passed"
             },
             "line": 49,
@@ -427,7 +427,7 @@
           },
           {
             "result": {
-              "duration": 29287900,
+              "duration": 28021700,
               "status": "passed"
             },
             "line": 50,
@@ -443,68 +443,13 @@
             "name": "@cenarioCompleto"
           },
           {
-            "name": "@criarMovimentacaoFutura"
+            "name": "@7-criarMovimentacaoFutura"
           }
         ]
       },
       {
-        "start_timestamp": "2023-02-01T19:17:46.365Z",
+        "start_timestamp": "2023-02-03T15:29:00.912Z",
         "line": 53,
-        "name": "Remover uma movimentação da conta",
-        "description": "",
-        "id": "acessar--adicionar-e-alterar-conta-de-um-usuário-no-site-do-seubarriga;remover-uma-movimentação-da-conta",
-        "type": "scenario",
-        "keyword": "Cenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1610121500,
-              "status": "passed"
-            },
-            "line": 54,
-            "name": "que estou na tela resumo mensal",
-            "match": {
-              "location": "RemoverMovimentacaoStep.acessoTelaResumoMensal()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 251804100,
-              "status": "passed"
-            },
-            "line": 55,
-            "name": "clico no icone de ações de uma movimentação",
-            "match": {
-              "location": "RemoverMovimentacaoStep.clicoIconeAcoes()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 28160300,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "visualizo mensagem: Movimentação removida com sucesso!",
-            "match": {
-              "location": "RemoverMovimentacaoStep.visualizoMensagemMovimentacaoRemovidaSucesso()"
-            },
-            "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cenarioCompleto"
-          },
-          {
-            "name": "@removerMovimentacao"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-02-01T19:17:48.256Z",
-        "line": 59,
         "name": "Remover uma conta com movimentação",
         "description": "",
         "id": "acessar--adicionar-e-alterar-conta-de-um-usuário-no-site-do-seubarriga;remover-uma-conta-com-movimentação",
@@ -513,10 +458,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1250359800,
+              "duration": 280861500,
               "status": "passed"
             },
-            "line": 60,
+            "line": 54,
             "name": "que estou na lista de contas",
             "match": {
               "location": "RemoverContaComMovimentacaoStep.acessoListaContas()"
@@ -525,10 +470,10 @@
           },
           {
             "result": {
-              "duration": 254881200,
+              "duration": 254459300,
               "status": "passed"
             },
-            "line": 61,
+            "line": 55,
             "name": "seleciono o ícone para excluir um nome da lista que possui movimentação",
             "match": {
               "location": "RemoverContaComMovimentacaoStep.selecionoIconeExcluirConta()"
@@ -537,10 +482,10 @@
           },
           {
             "result": {
-              "duration": 26714000,
+              "duration": 26784100,
               "status": "passed"
             },
-            "line": 62,
+            "line": 56,
             "name": "visualizo mensagem: Conta em uso na movimentações",
             "match": {
               "location": "RemoverContaComMovimentacaoStep.visualizoMensagemContaComMovimentacao()"
@@ -553,12 +498,67 @@
             "name": "@cenarioCompleto"
           },
           {
-            "name": "@removerContaComMovimentacao"
+            "name": "@8-removerContaComMovimentacao"
           }
         ]
       },
       {
-        "start_timestamp": "2023-02-01T19:17:49.789Z",
+        "start_timestamp": "2023-02-03T15:29:01.475Z",
+        "line": 59,
+        "name": "Remover uma movimentação da conta",
+        "description": "",
+        "id": "acessar--adicionar-e-alterar-conta-de-um-usuário-no-site-do-seubarriga;remover-uma-movimentação-da-conta",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 646952300,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "que estou na tela resumo mensal",
+            "match": {
+              "location": "RemoverMovimentacaoStep.acessoTelaResumoMensal()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 251192900,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "clico no icone de ações de uma movimentação",
+            "match": {
+              "location": "RemoverMovimentacaoStep.clicoIconeAcoes()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 27030600,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "visualizo mensagem: Movimentação removida com sucesso!",
+            "match": {
+              "location": "RemoverMovimentacaoStep.visualizoMensagemMovimentacaoRemovidaSucesso()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cenarioCompleto"
+          },
+          {
+            "name": "@9-removerMovimentacao"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-02-03T15:29:02.400Z",
         "line": 65,
         "name": "Visualizar saldo de uma conta com movimentação",
         "description": "",
@@ -568,7 +568,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1013181000,
+              "duration": 287401000,
               "status": "passed"
             },
             "line": 66,
@@ -580,7 +580,7 @@
           },
           {
             "result": {
-              "duration": 28325500,
+              "duration": 27813400,
               "status": "passed"
             },
             "line": 67,
@@ -592,7 +592,7 @@
           },
           {
             "result": {
-              "duration": 19975100,
+              "duration": 20854400,
               "status": "passed"
             },
             "line": 68,
@@ -608,7 +608,7 @@
             "name": "@cenarioCompleto"
           },
           {
-            "name": "@obterSaldoConta"
+            "name": "@10-obterSaldoConta"
           }
         ]
       }

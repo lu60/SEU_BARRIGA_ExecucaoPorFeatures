@@ -1,6 +1,5 @@
 package Steps;
 
-import Pages.AcessoContaPage;
 import Pages.CriarMovimentacaoDataFuturaPage;
 import Pages.CriarMovimentacaoPage;
 import Runner.RunSeuBarriga;
@@ -32,5 +31,6 @@ public class CriarMovimentacaoDataFuturaStep extends RunSeuBarriga {
     @Entao("visualizo mensagem: Data da Movimentação deve ser menor ou igual à data atual")
     public void visualizoMensagemDataMovimentacao() {
         criarMovimentacaoDataFutura.visualizarMensagemDataMovimentacao("Data da Movimentação deve ser menor ou igual à data atual");
+        System.out.println("Cenário 7: Não foi possível criar movimentação futura.");
     }
 }

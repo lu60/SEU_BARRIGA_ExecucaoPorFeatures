@@ -23,20 +23,14 @@ public class AlterarContaPage extends RunSeuBarriga {
     }
     public void selecionarNomeAlterar(String nomeAlterar) {
         String nomeLista = getDriver().findElement(nome_lista).getText();
-            //if (nomeLista == escolherNomeLista) {
         getDriver().findElement(iconeAlterar).click();
         getDriver().findElement(nomeContaAlterada_txt).clear();
         getDriver().findElement(nomeContaAlterada_txt).sendKeys(nomeAlterar);
-          //  }else{
-          //      System.out.println("Não encontrado nome na lista.");
-          //  }
     }
     public void clicarBotaoSalvar(){
         getDriver().findElement(botaoSalvar).click();
     }
     public void visualizoListaNomeAlterado() {
         String nomeLista = getDriver().findElement(nome_lista).getText();
-       // Utils.waitElementBePresent(nome_lista,2000);
-        System.out.println(nomeLista);
     }
 }

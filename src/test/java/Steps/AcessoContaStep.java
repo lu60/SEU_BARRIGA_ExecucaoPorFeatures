@@ -12,7 +12,6 @@ public class AcessoContaStep extends RunSeuBarriga {
 
     @Dado("^que estou no site do seu barriga$")
     public void AcessoLogin() {
-       acessoContaPage.AcessarConta("lu.pocebon@gmail.com", "P@alito176");
     }
     @Quando("^preencho meu e-mail e senha$")
     public void PreenchoEmailSenha() {
@@ -25,6 +24,7 @@ public class AcessoContaStep extends RunSeuBarriga {
     @Entao("^visualizo a conta com o nome do usuário logado$")
     public void VisualizoConta() {
         acessoContaPage.VisualizarConta("Bem vindo, Lu!");
+        System.out.println("Cenário 1: Conta acessada com sucesso!");
     }
 }
 

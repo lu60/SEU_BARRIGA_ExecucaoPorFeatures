@@ -1,6 +1,7 @@
 package Pages;
 
 import Runner.RunSeuBarriga;
+import Suporte.Utils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -11,7 +12,7 @@ public class RemoverMovimentacaoPage extends RunSeuBarriga {
     private By mes = By.id("mes");
     private By ano = By.id("ano");
     private By botaoBuscar = By.cssSelector("div.form-group.col-lg-9 > form > input");
-    private By iconeAcoes = By.cssSelector("tr:nth-child(1) > td:nth-child(6) > a > span");
+    private By iconeAcoes = By.cssSelector("td:nth-child(6) > a > span");
     private By mensagemTela = By.xpath("//div[contains(text(),'Movimentação removida com sucesso!')]");
     public void acessarTelaResumoMensal() {
         getDriver().findElement(resumoMensal_menu).click();
@@ -33,8 +34,8 @@ public class RemoverMovimentacaoPage extends RunSeuBarriga {
         getDriver().findElement(iconeAcoes).click();
     }
 
-    public void visualizarMensagemMovimentacaoRemovidaSucesso(String mensagem) {
-        boolean mensagemRemovida = getDriver().findElement(mensagemTela).getText().contains(mensagem);
-        Assert.assertTrue(mensagemRemovida);
+    public void visualizarMensagemMovimentacaoRemovidaSucesso() {
+        String mensagemRemovida = getDriver().findElement(mensagemTela).getText();
+        Assert.assertEquals("Movimentação removida com sucesso!", mensagemRemovida);
     }
 }

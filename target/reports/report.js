@@ -18,7 +18,7 @@ formatter.scenario({
       "name": "@cenarioCompleto"
     },
     {
-      "name": "@acessarConta"
+      "name": "@1-acessarConta"
     }
   ]
 });
@@ -71,7 +71,7 @@ formatter.scenario({
       "name": "@cenarioCompleto"
     },
     {
-      "name": "@alterarConta"
+      "name": "@2-alterarConta"
     }
   ]
 });
@@ -114,7 +114,7 @@ formatter.scenario({
       "name": "@cenarioCompleto"
     },
     {
-      "name": "@alterarContaMesmoNome"
+      "name": "@3-alterarContaMesmoNome"
     }
   ]
 });
@@ -167,7 +167,7 @@ formatter.scenario({
       "name": "@cenarioCompleto"
     },
     {
-      "name": "@adicionarConta"
+      "name": "@4-adicionarConta"
     }
   ]
 });
@@ -220,7 +220,7 @@ formatter.scenario({
       "name": "@cenarioCompleto"
     },
     {
-      "name": "@criarMovimentacao"
+      "name": "@5-criarMovimentacao"
     }
   ]
 });
@@ -273,7 +273,7 @@ formatter.scenario({
       "name": "@cenarioCompleto"
     },
     {
-      "name": "@camposObrigatorios"
+      "name": "@6-camposObrigatorios"
     }
   ]
 });
@@ -316,7 +316,7 @@ formatter.scenario({
       "name": "@cenarioCompleto"
     },
     {
-      "name": "@criarMovimentacaoFutura"
+      "name": "@7-criarMovimentacaoFutura"
     }
   ]
 });
@@ -361,49 +361,6 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Remover uma movimentação da conta",
-  "description": "",
-  "keyword": "Cenario",
-  "tags": [
-    {
-      "name": "@cenarioCompleto"
-    },
-    {
-      "name": "@removerMovimentacao"
-    }
-  ]
-});
-formatter.step({
-  "name": "que estou na tela resumo mensal",
-  "keyword": "Dado "
-});
-formatter.match({
-  "location": "RemoverMovimentacaoStep.acessoTelaResumoMensal()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "clico no icone de ações de uma movimentação",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "RemoverMovimentacaoStep.clicoIconeAcoes()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "visualizo mensagem: Movimentação removida com sucesso!",
-  "keyword": "Entao "
-});
-formatter.match({
-  "location": "RemoverMovimentacaoStep.visualizoMensagemMovimentacaoRemovidaSucesso()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
   "name": "Remover uma conta com movimentação",
   "description": "",
   "keyword": "Cenario",
@@ -412,7 +369,7 @@ formatter.scenario({
       "name": "@cenarioCompleto"
     },
     {
-      "name": "@removerContaComMovimentacao"
+      "name": "@8-removerContaComMovimentacao"
     }
   ]
 });
@@ -447,6 +404,49 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
+  "name": "Remover uma movimentação da conta",
+  "description": "",
+  "keyword": "Cenario",
+  "tags": [
+    {
+      "name": "@cenarioCompleto"
+    },
+    {
+      "name": "@9-removerMovimentacao"
+    }
+  ]
+});
+formatter.step({
+  "name": "que estou na tela resumo mensal",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "RemoverMovimentacaoStep.acessoTelaResumoMensal()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clico no icone de ações de uma movimentação",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "RemoverMovimentacaoStep.clicoIconeAcoes()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "visualizo mensagem: Movimentação removida com sucesso!",
+  "keyword": "Entao "
+});
+formatter.match({
+  "location": "RemoverMovimentacaoStep.visualizoMensagemMovimentacaoRemovidaSucesso()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
   "name": "Visualizar saldo de uma conta com movimentação",
   "description": "",
   "keyword": "Cenario",
@@ -455,7 +455,7 @@ formatter.scenario({
       "name": "@cenarioCompleto"
     },
     {
-      "name": "@obterSaldoConta"
+      "name": "@10-obterSaldoConta"
     }
   ]
 });

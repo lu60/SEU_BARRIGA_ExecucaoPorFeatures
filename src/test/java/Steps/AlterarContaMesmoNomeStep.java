@@ -1,6 +1,5 @@
 package Steps;
 
-import Pages.AcessoContaPage;
 import Pages.AlterarContaMesmoNomePage;
 import Pages.AlterarContaPage;
 import Runner.RunSeuBarriga;
@@ -10,13 +9,11 @@ import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 
 public class AlterarContaMesmoNomeStep extends RunSeuBarriga {
-    AcessoContaPage acessoContaPage = new AcessoContaPage();
     AlterarContaPage alterarContaPage = new AlterarContaPage();
     AlterarContaMesmoNomePage alterarContaMesmoNomePage = new AlterarContaMesmoNomePage();
 
     @Dado("que quero alterar um nome da lista")
     public void estouNaLista() {
-        acessoContaPage.AcessarConta("lu.pocebon@gmail.com", "P@alito176");
         alterarContaPage.acessarLista();
     }
 
@@ -33,5 +30,6 @@ public class AlterarContaMesmoNomeStep extends RunSeuBarriga {
     @Entao("visualizo mensagem: já existe uma conta com esse nome!")
     public void visualizoMensagem(){
         alterarContaMesmoNomePage.visualizarMensagem("Já existe uma conta com esse nome!");
+        System.out.println("Cenário 3: Nome Tuca 1 já existe.");
     }
 }

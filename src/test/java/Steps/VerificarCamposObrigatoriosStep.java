@@ -1,6 +1,5 @@
 package Steps;
 
-import Pages.AcessoContaPage;
 import Pages.VerificarCamposObrigatoriosPage;
 import Runner.RunSeuBarriga;
 import cucumber.api.java.pt.Dado;
@@ -8,11 +7,9 @@ import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 
 public class VerificarCamposObrigatoriosStep extends RunSeuBarriga {
-    AcessoContaPage acessoContaPage = new AcessoContaPage();
     VerificarCamposObrigatoriosPage verificaCampos = new VerificarCamposObrigatoriosPage();
     @Dado("que estou na tela de criar movimentacao")
     public void acessoTelaCriarMovimentacao() {
-        acessoContaPage.AcessarConta("lu.pocebon@gmail.com", "P@alito176");
         verificaCampos.acessarCriarMovimentacao();
     }
 
@@ -29,5 +26,6 @@ public class VerificarCamposObrigatoriosStep extends RunSeuBarriga {
         verificaCampos.visualizarMensagensCampoInteressado("Interessado é obrigatório");
         verificaCampos.visualizarMensagensCampoValor("Valor é obrigatório");
         verificaCampos.visualizarMensagemCampoNumerico("Valor deve ser um número");
+        System.out.println("Cenário 6: Campos obrigatórios validados com sucesso!");
     }
 }

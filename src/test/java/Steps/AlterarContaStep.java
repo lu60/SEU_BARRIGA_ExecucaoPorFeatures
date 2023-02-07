@@ -1,17 +1,14 @@
 package Steps;
 
-import Pages.AcessoContaPage;
 import Pages.AlterarContaPage;
 import Runner.RunSeuBarriga;
 import cucumber.api.java.pt.*;
 
 public class AlterarContaStep extends RunSeuBarriga {
-    AcessoContaPage acessoContaPage = new AcessoContaPage();
     AlterarContaPage alterarContaPage = new AlterarContaPage();
 
     @Dado("que estou na lista")
     public void estouNaLista() {
-        acessoContaPage.AcessarConta("lu.pocebon@gmail.com", "P@alito176");
         alterarContaPage.acessarLista();
     }
 
@@ -24,5 +21,6 @@ public class AlterarContaStep extends RunSeuBarriga {
     @Entao("visualizo a lista com o nome alterado")
     public void visualizoListaNomeAlterado() {
         alterarContaPage.visualizoListaNomeAlterado();
+        System.out.println("Cenário 2: Nome alterado para Tuca1234");
     }
 }

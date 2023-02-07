@@ -23,5 +23,6 @@ public class AcessoContaPage extends RunSeuBarriga {
     public void VisualizarConta(String mensagem) {
         String usuario = getDriver().findElement(menssagemBemVindo).getText();
         Assert.assertEquals(mensagem, usuario);
+
     }
 }
